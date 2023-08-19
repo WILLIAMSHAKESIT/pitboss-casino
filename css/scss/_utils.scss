@@ -1,0 +1,138 @@
+.container{
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin: 0 auto;
+    z-index: 100;
+}
+.red{
+    color: rgb(255 54 61);
+}
+.green{
+    color: rgb(17, 171, 17);
+}
+.blue{
+    color: rgb(69, 140, 255);
+}
+.bottom-bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.bolder{
+    font-weight: 900;
+}
+.bold{
+    font-weight: 700;
+}
+.highlight{
+    font-weight: 600;
+    color: #fff !important;
+}
+.scroll-top {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 10;
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    background: #9f141a;
+    opacity: .6;
+  }
+  
+  .scroll-top:hover {
+    opacity: 1;
+  }
+  
+  .scroll-top i {
+    position: relative;
+  }
+.form-action{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 10px auto;
+    width: fit-content;
+    button{
+        width: 200px;
+        i{
+            margin-right: 10px;
+        }
+    }
+    &.login{
+        width: 100%;
+        button{
+            width: 100%;
+        }
+    }
+}
+.mt-1{
+    margin-top: 20px;
+}
+.mt-2{
+    margin-top: 40px;
+}
+.w-full{
+    width: 100%;
+}
+.second-title{
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.1em;
+    font-family: 'Yeongdo-Rg';
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+    &.items-center{
+        align-items: center;
+    }
+    &.gap-1{
+        gap: 10px;
+    }
+}
+.mx-auto{
+    margin: 0 auto;
+}
+@keyframes fade-to-right {
+    0%{
+        left: -100%;
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        left: -46%;
+        opacity: 1;
+    }
+}
+@keyframes fade-to-left {
+    0%{
+        right: -100%;
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        right: -46%;
+        opacity: 1;
+    }
+}
+
+.mr-1{
+    margin-right: 5px;
+}
+.mobile-toggle{
+    display: none;
+}
+.overlay{
+    display: none;
+}

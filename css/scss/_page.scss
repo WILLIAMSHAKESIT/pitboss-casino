@@ -1,0 +1,218 @@
+.mc1{
+    display: flex;
+    gap: 20px;
+    ul{
+        display: flex;
+    }
+}
+.mc2{
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .button-menu{
+            display: flex;
+            gap: 10px;
+            button{
+                height: 39px;
+                padding: 4px 10px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 100px;
+                background: linear-gradient(0deg, #1e1e1e 0%, #3e3e3e 100%);
+                border: unset;
+                color: #ffffff;
+                &.active{
+                    background: linear-gradient(to bottom, #ee2e2e, #8c1515);
+                }
+            }
+        }
+    }
+    ul{
+        &.hide{
+            display: none;
+        }
+        &.casino{
+            li{
+                border-radius: 7px;
+                overflow: hidden;
+                &:hover{
+                    a{
+                        img{
+                            filter: grayscale(100%) brightness(1);
+                        }
+                    }
+                }
+            }
+        }
+        &.slot{
+            li{
+                border-radius: 7px;
+                overflow: hidden;
+                a{
+                    position: relative;
+                    // .card-img{
+                    //     min-width: 272px;
+                    //     max-width: 272px;
+                    // }
+                    .card-logo{
+                        position: absolute;
+                        width: 100px;
+                        top: 16px;
+                        left: 16px;
+                        z-index: 100;
+                    }
+                }   
+                &:hover{
+                    a{
+                        img{
+                            filter: grayscale(100%) brightness(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.top_w{
+    .top1{
+        .cons{
+            li{
+                position: relative;
+                .not-dot{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: red;
+                    font-size: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: -12px;
+                    top: 3px;
+                    border: 1px solid #000;
+                }
+            }
+        }
+    }
+}
+.mc3,.mc4{
+    display: flex;
+    .mc3_2{
+        .center{
+            display: flex;
+            a{
+                width: 100%;
+                text-align: center;
+                font-size: 25px;
+                border-bottom: 1px solid rgba(86, 68, 68, 0);
+                &.active{
+                    color: #ff7277;
+                    border-bottom: 1px solid #8f1216;
+                }
+                &:hover{
+                    transition: .5s ease-in-out;
+                    color: #8f1216;
+                    border-bottom: 1px solid #8f1216;
+                }
+            }
+        }
+        .realtime-trans{
+            min-height: 225px;
+            background:#222222; 
+            border-radius:10px; 
+            height:200px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            &:hover{
+                background: #393939;
+            }
+            ul{
+                bottom: 0;
+                width: 100%;
+                padding: unset;
+                min-height: 100%;
+                &.show{
+                    display: block;
+                }
+                &.hide{
+                    display: none;
+                }
+                &:hover{
+                    background: unset;
+                }
+                li{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .notice-board,.event-board{
+        .tits{
+            background-color: #323232;
+            border-radius: 4px;
+            padding: 5px 16px;
+        }
+    }
+}
+.main_con{
+    position: relative;
+    .card-1{
+        position: absolute;
+        width: 635px;
+        top: 0;
+        transform: translateY(-50%);
+        left: -46%;
+        z-index: 0;
+        animation: fade-to-right 3s ease-in-out forwards;
+    }
+    .card-2{
+        position: absolute;
+        width: 635px;
+        top: 0;
+        transform: translateY(-50%) scaleX(-1);
+        right: -46%;
+        z-index: 0;
+        animation: fade-to-left 3s ease-in-out forwards;
+    }
+    .card-3{
+        position: absolute;
+        bottom: 10px; 
+        right: -26%;
+        width: 400px;
+    }
+}
+.footer{
+    padding: 0;
+    .provider{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+        padding: 40px 0;
+        img{
+            width: 80px;
+            height: 28px;
+            filter:grayscale(100%)
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        padding: 19px 0px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        img{
+            width: 116px;
+        }
+    }
+}
